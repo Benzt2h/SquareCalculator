@@ -27,7 +27,7 @@
         android:layout_below="@id/btnSquare"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="สี่เหลี่ยมผืนผ้า"
+        android:text="หาพื้นที่สี่เหลี่ยมผืนผ้า"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
