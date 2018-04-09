@@ -18,7 +18,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         var intent : Intent
-        when (v?.id){
+        if(v == btnSquare){
+            intent = Intent(this, SquareActivity::class.java)
+            startActivity(intent)
+        }else if(v == btnRectangle){
+            intent = Intent(this, RectangleActivity::class.java)
+            startActivity(intent)
+        }
+        /*when (v?.id){
             R.id.btnSquare ->{
                 intent = Intent(this, SquareActivity::class.java)
                 startActivity(intent)
@@ -27,6 +34,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 intent = Intent(this, RectangleActivity::class.java)
                 startActivity(intent)
             }
-        }
+        }*/
     }
 }
